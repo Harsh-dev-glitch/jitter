@@ -1,7 +1,6 @@
-<p align="center">
-  <img src="[https://github.com](https://github.com/user-attachments/assets/b92a9251-653e-422d-be74-c42729b22268)" width="150" alt="Logo">
+<p> align="center"
+  <img width="150" height="150" alt="Logo" src="https://github.com/user-attachments/assets/4a20b352-a1eb-4546-b3a6-d6c9f9fc675a" />
 </p>
-
 # jitter
 A ring oscillator TRNG (True random number generator) 
 
