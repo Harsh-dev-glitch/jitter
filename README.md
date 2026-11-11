@@ -4,7 +4,7 @@
 
 # Jitter
 
-This is a custom-made Application-Specific Integrated Circuit (ASIC) True Random Number Generator (TRNG), created as part of the Hack Club ASIC program. It was made using the Tiny Tapeout service on the GlobalFoundries 180nm (GF180MCU) process.
+This is a custom-made Application-Specific Integrated Circuit (ASIC) True Random Number Generator (TRNG), created as part of the Hack Club [ASIC](https://asic.hackclub.com/) program. It was made using the Tiny Tapeout service on the GlobalFoundries 180nm (GF180MCU) process.
 
 Instead of using a software-based Pseudo-Random Number Generator (PRNG), this design uses true randomness.
 
@@ -25,8 +25,5 @@ In real hardware, we cannot have perfect periodicity in our signal. There are mi
 The oscillating signal is applied to the data input of a D flip-flop. The clock signal for the flip-flop comes from the main ASIC clock. Because the oscillator is asynchronous to our main clock, the flip-flop will capture the state of the oscillator at a random point in its cycle. This gives us a true random bit.
 
 This continues for a total of 8 clock cycles, giving us a random byte.
-
-## Idea & Inspiration
-I made this jitter TRNG from [asic.hackclub.com](https://asic.hackclub.com/) GF180MCU Run 3 MPW (multi-project-wafer) from DeepAI
 
 **Tile Size:** 1x1 (approx. 340 × 160 µm)
