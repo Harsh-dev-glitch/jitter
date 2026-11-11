@@ -27,17 +27,7 @@ The oscillating signal is applied to the data input of a D flip-flop. The clock 
 
 This continues for a total of 8 clock cycles, giving us a random byte.
 
-## Pinout
-
-This design can be easily integrated.
-
-| Pin Name | Description | Direction |
-| :--- | :--- | :---: |
-| `clk` | Main ASIC clock, used to sample the oscillator | Input |
-| `rst_n` | Reset signal (active low), sets the output register to 0 | Input |
-| `ui_in[0]` | Enable TRNG. The ring oscillator is active when high; when low, the oscillator is turned off to save power | Input |
-| `uo_out[7:0]` | Random byte output, gives the most recent random 8-bit number | Output |
-
-Unused inputs and bidirectional pins are grounded/disabled.
+## Idea & Inspiration
+I made this jitter TRNG from [asic.hackclub.com](https://asic.hackclub.com/) GF180MCU Run 3 MPW (multi-project-wafer) from DeepAI
 
 **Tile Size:** 1x1 (approx. 340 × 160 µm)
